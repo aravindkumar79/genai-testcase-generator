@@ -65,7 +65,7 @@ genai-testcase-generator/
 ├── generated_features/       # Output Cucumber files
 └── chroma_db/               # Vector database
 
-##  Quick Start
+## Quick Start
 
 1. Process Your Requirements PDF
 python
@@ -86,10 +86,10 @@ vector_store.add_requirements(requirements)
 generator = CucumberTestGenerator(vector_store)
 results = generator.generate_all_tests(requirements)
 
-##  License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-##  Acknowledgments
+## Acknowledgments
 Ollama for local LLM support
 ChromaDB for vector database
 PyMuPDF for PDF processing
