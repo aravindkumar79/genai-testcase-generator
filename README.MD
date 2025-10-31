@@ -36,60 +36,8 @@ Cucumber Feature Files (.feature)
 - Tesseract OCR
 
 ## Clone Repository
-```bash
-git clone https://github.com/yourusername/ai-test-generation-poc.git
-cd ai-test-generation-poc
+git clone https://github.com/yourusername/genai-testcase-generator.git
+cd genai-testcase-generator
 
 ## Install Dependencies
 pip install -r requirements.txt
-
-## Setup Ollama (Optional - for local LLM)
-  # Install Ollama
-  curl -fsSL https://ollama.ai/install.sh | sh
-  
-  # Pull Mistral model
-  ollama pull mistral:7b
-  
-  # Install Tesseract OCR
-  Mac: brew install tesseract
-  Ubuntu: sudo apt-get install tesseract-ocr
-  Windows: Download from UB-Mannheim/tesseract
-
-## Project Structure
-genai-testcase-generator/
-├── pdf_processor.py          # PDF extraction & OCR
-├── vector_store.py           # ChromaDB semantic search
-├── cucumber_generator.py     # Ollama test generation
-├── requirements.txt          # Python dependencies
-├── extracted_requirements/   # Processed requirements
-├── generated_features/       # Output Cucumber files
-└── chroma_db/               # Vector database
-
-## Quick Start
-
-1. Process Your Requirements PDF
-python
-from pdf_processor import DomainAgnosticPDFProcessor
-
-processor = DomainAgnosticPDFProcessor("your_requirements.pdf")
-requirements = processor.process_pdf_with_workflows()
-processor.save_requirements("extracted_requirements.json")
-
-2. Generate Test Cases with Ollama
-python
-from cucumber_generator import CucumberTestGenerator
-from vector_store import RequirementVectorStore
-
-vector_store = RequirementVectorStore()
-vector_store.add_requirements(requirements)
-
-generator = CucumberTestGenerator(vector_store)
-results = generator.generate_all_tests(requirements)
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-Ollama for local LLM support
-ChromaDB for vector database
-PyMuPDF for PDF processing
