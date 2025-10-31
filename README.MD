@@ -9,7 +9,7 @@ This POC demonstrates how AI can revolutionize software testing by automatically
 ## 🎯 Key Features
 
 - **📄 PDF Processing**: Extracts requirements from PDF documents with OCR support for images and diagrams
-- **🤖 Multi-Model AI**: Supports both local LLMs (Ollama) and transformer models (Flan-T5)
+- **🤖 Multi-Model AI**: Supports local LLMs (Ollama)
 - **🔍 Semantic Search**: Uses ChromaDB vector database for context-aware test generation
 - **🔄 Domain Agnostic**: Works across financial, healthcare, e-commerce domains without retraining
 - **✅ BDD Ready**: Generates executable Cucumber Gherkin syntax with proper Given/When/Then structure
@@ -43,7 +43,6 @@ cd ai-test-generation-poc
 2. Install Dependencies
 pip install -r requirements.txt
 
-
 3. Setup Ollama (Optional - for local LLM)
 # Install Ollama
 curl -fsSL https://ollama.ai/install.sh | sh
@@ -52,7 +51,6 @@ curl -fsSL https://ollama.ai/install.sh | sh
 ollama pull mistral:7b
 
 4. Install Tesseract OCR
-
 Mac: brew install tesseract
 Ubuntu: sudo apt-get install tesseract-ocr
 Windows: Download from UB-Mannheim/tesseract
@@ -66,3 +64,32 @@ genai-testcase-generator/
 ├── extracted_requirements/   # Processed requirements
 ├── generated_features/       # Output Cucumber files
 └── chroma_db/               # Vector database
+
+6. Quick Start
+
+1. Process Your Requirements PDF
+python
+from pdf_processor import DomainAgnosticPDFProcessor
+
+processor = DomainAgnosticPDFProcessor("your_requirements.pdf")
+requirements = processor.process_pdf_with_workflows()
+processor.save_requirements("extracted_requirements.json")
+
+2. Generate Test Cases with Ollama
+python
+from cucumber_generator import CucumberTestGenerator
+from vector_store import RequirementVectorStore
+
+vector_store = RequirementVectorStore()
+vector_store.add_requirements(requirements)
+
+generator = CucumberTestGenerator(vector_store)
+results = generator.generate_all_tests(requirements)
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Ollama for local LLM support
+ChromaDB for vector database
+PyMuPDF for PDF processing
