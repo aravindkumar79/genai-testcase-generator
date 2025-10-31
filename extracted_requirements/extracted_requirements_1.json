@@ -1,0 +1,398 @@
+[
+  {
+    "id": "REQ_001",
+    "content": "SAMPLE BUSINESS \nREQUIREMENTS \nDOCUMENT TEMPLATE \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE \nVERSION HISTORY \nVERSION \nAPPROVED BY \nREVISION \nDATE \nDESCRIPTION OF CHANGE \nAUTHOR \nNOTE TO USER: Overwrite the sample text included in this template to complete your project\u2019s business \nrequirements document.\nPROJECT NAME\n \nCOMPANY NAME \nStreet Address \nCity, State and Zip \n \nwebaddress.com \n \nVERSION 0.0.0 \n \n00/00/0000 \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE \nTABLE OF CONTENTS",
+    "type": "user_interface",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "sample",
+      "business",
+      "requirements",
+      "document",
+      "template",
+      "version",
+      "project",
+      "name",
+      "history",
+      "approved"
+    ],
+    "source": "PDF_Section_1"
+  },
+  {
+    "id": "REQ_002",
+    "content": "EXECUTIVE SUMMARY SNAPSHOT\nProvide a brief executive summary (overview of your business requirements) here.  \nYour executive summary should be a \u201csnapshot\u201d of the purpose of your business requirements, including a brief \ndescription of any analysis, findings, project description, scope, business drivers, proposed process, current process, and \nfunctional requirements. \n \nSAMPLE TEXT: As a socially and environmentally conscious company trying to make a positive difference in the world, \nwe want to roll out our product to more locations than any other EV charging provider. In order to reach our primary \ngoal of becoming the world's largest EV charging provider and thus reducing the environmental impact of fossil-fuel \ncars through our services, we need to triple the number of EV charging stations that we currently have in the U.S. and \nCanada.",
+    "type": "validation",
+    "testability_score": 3,
+    "validation_rules": [
+      ""
+    ],
+    "keywords": [
+      "executive",
+      "summary",
+      "your",
+      "business",
+      "requirements",
+      "our",
+      "charging",
+      "snapshot",
+      "brief",
+      "description"
+    ],
+    "source": "PDF_Section_2"
+  },
+  {
+    "id": "REQ_003",
+    "content": "Etc. \n \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "etc",
+      "sample",
+      "business",
+      "requirements",
+      "document",
+      "template"
+    ],
+    "source": "PDF_Section_3"
+  },
+  {
+    "id": "REQ_004",
+    "content": "PROJECT DESCRIPTION\nIn this section, describe the project for which you are writing this business requirements document. Describe the \nproject\u2019s purpose, what the current process/solution is for the project, what the challenges are, and why you need to \nundertake the project.  \n \nSAMPLE TEXT: The primary goal of this project is to roll out our EV charging stations to more locations than any other EV \ncharging provider. In order to become the world's largest EV charging provider and thus reduce the environmental \nimpact of fossil-fuel cars through our services, we need to triple the number of EV charging stations that we currently \nhave in the U.S. and Canada.",
+    "type": "integration",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "project",
+      "charging",
+      "this",
+      "describe",
+      "you",
+      "are",
+      "what",
+      "need",
+      "our",
+      "stations"
+    ],
+    "source": "PDF_Section_4"
+  },
+  {
+    "id": "REQ_005",
+    "content": "By undertaking this project, we will ensure that we meet our goals, namely those of increasing our stakes significantly, \nhaving a positive effect on the environment, and\u2026",
+    "type": "business_rule",
+    "testability_score": 4,
+    "validation_rules": [
+      ""
+    ],
+    "keywords": [
+      "our",
+      "undertaking",
+      "this",
+      "project",
+      "will",
+      "ensure",
+      "that",
+      "meet",
+      "goals",
+      "namely"
+    ],
+    "source": "PDF_Section_5"
+  },
+  {
+    "id": "REQ_006",
+    "content": "Etc. \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "etc",
+      "sample",
+      "business",
+      "requirements",
+      "document",
+      "template"
+    ],
+    "source": "PDF_Section_6"
+  },
+  {
+    "id": "REQ_007",
+    "content": "PROJECT SCOPE\nProvide a high-level description of the project\u2019s scope, including a list of project-specific goals, tasks, deliverables, costs, \ndeadlines \u2013 everything that is \u201cin\u201d and \u201cout\u201d of scope for the project. This information provides team members with \nguidelines for the scope of the project, so they can plan and resource accordingly. \nIN SCOPE \nThe following are \u201cin scope\u201d for the project: \n \nSAMPLE TEXT \n\u25cf In-scope item 1 \u2013 Conduct further research concerning the viability of Canadian locations for our EV charging \nstations\u2026  \n\u25cf In-scope item 2 \u2013 Conduct a sales campaign to engage owners of potential EV charging locations\u2026  \n\u25cf In-scope item 3 - Establish a rollout schedule of new EV charging stations with our operations team / field techs\u2026  \n\u25cf In-scope item 4 \u2013 Increase our production of hardware to accommodate all new locations\u2026   \n\u25cf In-scope item 5 - Etc.  \n \nOUT OF SCOPE \nThe following are \u201cout of scope\u201d for the project: \n \nSAMPLE TEXT \n\u25cf Not-in-scope item 1 - Install the logistics for our new EV charging stations\u2026  \n\u25cf Not-in-scope item 2 \u2013 Cover the total operations cost for our rollout to all the new sites\u2026  \n\u25cf Not-in-scope item 3 \u2013 Cover the legal fees and taxes associated with our new installations...  \n\u25cf Not-in-scope item 4 - Etc.  \n \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "business_rule",
+    "testability_score": 5,
+    "validation_rules": [],
+    "keywords": [
+      "scope",
+      "item",
+      "project",
+      "our",
+      "new",
+      "charging",
+      "not",
+      "out",
+      "sample",
+      "locations"
+    ],
+    "source": "PDF_Section_7"
+  },
+  {
+    "id": "REQ_008",
+    "content": "BUSINESS DRIVERS\nEnter the reasons (i.e., business drivers) why your business is initiating the project. In short, why are you undertaking the \nproject? \n \nSAMPLE TEXT: \n\u25cf Because the more efficiently we roll out our EV stations, the more we can reduce costs\u2026   \n\u25cf Because the government has updated the import/export laws regarding EV stations\u2026  \n\u25cf Because the more units we produce and install, the more we can improve efficiency and achieve exponential \nsavings\u2026  \n\u25cf Because it will improve sales\u2026  \n\u25cf Etc.  \n  \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 3,
+    "validation_rules": [],
+    "keywords": [
+      "business",
+      "because",
+      "more",
+      "drivers",
+      "why",
+      "project",
+      "sample",
+      "stations",
+      "can",
+      "improve"
+    ],
+    "source": "PDF_Section_8"
+  },
+  {
+    "id": "REQ_009",
+    "content": "CURRENT PROCESS\nProvide details of your current process for addressing the primary issue your project attempts to solve. Feel free to \ninclude diagrams, flowcharts, or other visuals to illustrate the current process. \n \nSAMPLE TEXT: Our current process requires that we check the laws related to EV charging stations on a \ncounty-by-county basis. However, with the recent passage of the new federal law regarding EV charging infrastructure, \nwe will be able to\u2026  \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "validation",
+    "testability_score": 5,
+    "validation_rules": [],
+    "keywords": [
+      "current",
+      "process",
+      "your",
+      "sample",
+      "charging",
+      "county",
+      "provide",
+      "details",
+      "addressing",
+      "primary"
+    ],
+    "source": "PDF_Section_9"
+  },
+  {
+    "id": "REQ_010",
+    "content": "PROPOSED PROCESS\nProvide details of the proposed process for addressing the primary issue your project attempts to solve. Feel free to \ninclude diagrams, flowcharts, or other visuals to illustrate the proposed process. For this process, we recommend you use \nthe same illustrative tool/style that you used for your current process (above).  \n \nSAMPLE TEXT: With the recent passage of the new federal law regarding EV charging infrastructure, we will be able to\u2026 \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "process",
+      "proposed",
+      "your",
+      "you",
+      "sample",
+      "provide",
+      "details",
+      "addressing",
+      "primary",
+      "issue"
+    ],
+    "source": "PDF_Section_10"
+  },
+  {
+    "id": "REQ_011",
+    "content": "FUNCTIONAL REQUIREMENTS\nDetail the project\u2019s functional requirements by enumerating the ways in which the current process addresses the issue \nand by describing the functional requirements necessary to the project\u2019s success. \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE \nPRIORITY \nUse the following priority table. It allows you to apply a ratings system to your \nrequirements, so you have the visibility (into the value, status, and description of each \nrequirement) that\u2019s necessary for determining whether a particular requirement is \nessential to project success: \nValue \nRating \nDescription \n1 \nCritical \nThe requirement is critical to the project\u2019s success. \nWithout fulfilling this requirement, the project is not \npossible.  \n2 \nHigh \nThe requirement is high priority re the project\u2019s \nsuccess, but the project could still be implemented \nin a minimum viable product (MVP) scenario.  \n3 \nMedium \nThe requirement is important to the project\u2019s \nsuccess, as it provides value, but the project could \nstill be implemented in an MVP scenario.  \n4 \nLow \nThe requirement is low priority (i.e., it would be nice \nto have), but the project\u2019s success is not dependent \nupon it.  \n5 \nFuture \nThe requirement is outside of the project\u2019s scope \nand is included as a possible component of a \nprospective release and/or feature.  \nREQUIREMENTS CATEGORIES (RC1)  \nID \nRequirement \nPriority \nRaised By \nDetail the project\u2019s functional use; break down your project\u2019s requirements into categories so that they\u2019re \neasy to understand. You can duplicate this section for any successive project categories as needed. The \nfollowing table includes a unique ID for each requirement, the details of each requirement, the priority of \neach requirement, and the name of the person who is driving or is responsible for the requirement. \nSAMPLE TEXT: Increase the production of EV charging \nunits.\nSAMPLE TEXT: Coordinate with manufacturing regarding \nincreases.\nSAMPLE TEXT: Coordinate / align with operations.\nSAMPLE TEXT: Obtain executive project approval / sign \noff.\nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "project",
+      "requirement",
+      "requirements",
+      "success",
+      "sample",
+      "priority",
+      "functional",
+      "each",
+      "text",
+      "you"
+    ],
+    "source": "PDF_Section_11"
+  },
+  {
+    "id": "REQ_012",
+    "content": "NON-FUNCTIONAL REQUIREMENTS\n. \nID \nRequirement \nDetail all non-functional requirements (NFRs) of the project, including such things as features, system \nbehavior, and project characteristics that relate to user experience. \nSAMPLE TEXT: Implement the new EV charging station interface (v.2.3)...\nSAMPLE TEXT: Conduct user research based on test-market experience\u2026 \nSAMPLE TEXT: Obtain buy-in from marketing ...\nEtc.\nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "user_interface",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "sample",
+      "requirements",
+      "text",
+      "non",
+      "functional",
+      "project",
+      "user",
+      "experience",
+      "requirement",
+      "detail"
+    ],
+    "source": "PDF_Section_12"
+  },
+  {
+    "id": "REQ_013",
+    "content": "FINANCIAL STATEMENTS\nDetail the financial impact of the project on the company\u2019s balance sheet for the projected duration of the project.  \n \nSAMPLE TEXT: While the short-term financial impact of increasing the production of EV charging units will be \nburdensome, the long-term impact of ramping up production will be incredibly positive: We project a four hundred \npercent return on our investment. For more detailed information concerning this topic, please see the attached \nfinancial analysis/projections\u2026  \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "financial",
+      "impact",
+      "project",
+      "sample",
+      "term",
+      "production",
+      "will",
+      "statements",
+      "detail",
+      "company"
+    ],
+    "source": "PDF_Section_13"
+  },
+  {
+    "id": "REQ_014",
+    "content": "COST AND BENEFIT\nProvide a detailed list of all costs involved in the proposed project, along with a cost-benefit analysis. Include proposed \nor projected funding source details for the project\u2019s expenses. \n \nSAMPLE TEXT: The attached document includes a detailed list of all costs involved in the proposed project as well as a \ncost\u2013benefit analysis\u2026   \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "cost",
+      "benefit",
+      "proposed",
+      "project",
+      "detailed",
+      "list",
+      "all",
+      "costs",
+      "involved",
+      "analysis"
+    ],
+    "source": "PDF_Section_14"
+  },
+  {
+    "id": "REQ_015",
+    "content": "RESOURCES\nProvide details of the resources required for the project. Include personnel needs, hardware, software, equipment, \noffice space, etc. \n \nSAMPLE TEXT: The resources required for this project (e.g., personnel needs, equipment, office space, etc.) are as \nfollows\u2026  \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "resources",
+      "required",
+      "project",
+      "personnel",
+      "needs",
+      "equipment",
+      "office",
+      "space",
+      "etc",
+      "sample"
+    ],
+    "source": "PDF_Section_15"
+  },
+  {
+    "id": "REQ_016",
+    "content": "SCHEDULE, TIMELINE, AND DEADLINES\nProvide a detailed list of the project\u2019s schedule-specific timelines, deadlines, milestones, etc. \n \nSAMPLE TEXT: Once we meet all of our business requirements, we expect to complete this project within a two-year \ntimeline. The following list includes a broad-strokes timeline, hard deadlines, major milestones, etc\u2026. \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "business_rule",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "timeline",
+      "deadlines",
+      "schedule",
+      "list",
+      "project",
+      "milestones",
+      "etc",
+      "sample",
+      "business",
+      "requirements"
+    ],
+    "source": "PDF_Section_16"
+  },
+  {
+    "id": "REQ_017",
+    "content": "ASSUMPTIONS\nProvide a detailed list of assumptions (project factors believed to be true but that haven\u2019t been confirmed) to better \ndetermine the project\u2019s risk factors. \n \nSAMPLE TEXT: We assume that the company is willing to increase manufacturing of EV charging stations by threefold \nand to increase personnel numbers as well\u2026 \nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 3,
+    "validation_rules": [],
+    "keywords": [
+      "assumptions",
+      "project",
+      "factors",
+      "that",
+      "sample",
+      "increase",
+      "provide",
+      "detailed",
+      "list",
+      "believed"
+    ],
+    "source": "PDF_Section_17"
+  },
+  {
+    "id": "REQ_018",
+    "content": "GLOSSARY\nTerm / Abbreviation \nExplanation \nFor easy reference, enter any terms, abbreviations, and/or acronyms that you include in this document. \nSAMPLE TEXT is below ... \nSAMPLE: EV\nSAMPLE: Electric vehicle\nSAMPLE: SOV\nSAMPLE: Single-occupancy vehicle\nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "sample",
+      "document",
+      "vehicle",
+      "glossary",
+      "term",
+      "abbreviation",
+      "explanation",
+      "easy",
+      "reference",
+      "enter"
+    ],
+    "source": "PDF_Section_18"
+  },
+  {
+    "id": "REQ_019",
+    "content": "REFERENCES\nName \nLocation \nProvide links to all the resources (websites, documents, etc.) that you\u2019ve referenced in this document. \nSAMPLE TEXT is below...\nSAMPLE: Manufacturing Overview\nSAMPLE: Positivecharge.com/manufacturing\nSAMPLE BUSINESS REQUIREMENTS DOCUMENT TEMPLATE",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "sample",
+      "document",
+      "manufacturing",
+      "references",
+      "name",
+      "location",
+      "provide",
+      "links",
+      "all",
+      "resources"
+    ],
+    "source": "PDF_Section_19"
+  },
+  {
+    "id": "REQ_020",
+    "content": "APPENDIX\nInclude any additional information for reference, including process details, analysis results, studies, third-party examples, \netc.\nDISCLAIMER \nAny articles, templates, or information provided by Smartsheet on the website are for \nreference only. While we strive to keep the information up to date and correct, we \nmake no representations or warranties of any kind, express or implied, about the \ncompleteness, accuracy, reliability, suitability, or availability with respect to the website \nor the information, articles, templates, or related graphics contained on the website. \nAny reliance you place on such information is therefore strictly at your own risk.",
+    "type": "functional",
+    "testability_score": 1,
+    "validation_rules": [],
+    "keywords": [
+      "information",
+      "any",
+      "website",
+      "reference",
+      "articles",
+      "templates",
+      "appendix",
+      "include",
+      "additional",
+      "including"
+    ],
+    "source": "PDF_Section_20"
+  }
+]

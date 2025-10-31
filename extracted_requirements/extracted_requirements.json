@@ -1,0 +1,199 @@
+[
+  {
+    "id": "REQ_001",
+    "content": "RTGS STP Utility is a real-time application interface for processing of large value interbank remittance \ntransactions as per the policies and procedures of Central Bank. The transactions are processed on Gross \nbasis and can be linked with the Central Bank RTGS system; this minimizes the systemic risks that are \ninherent in large-value net settlement systems. \nThis BRD is being submitted in order to have an automated solution for processing of large value \ninterbank remittance transactions in real-time and secure way.",
+    "type": "functional",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "large",
+      "value",
+      "transactions",
+      "rtgs",
+      "real",
+      "time",
+      "processing",
+      "interbank",
+      "remittance",
+      "central"
+    ],
+    "source": "PDF_Section_1"
+  },
+  {
+    "id": "REQ_002",
+    "content": "The solution should have the following functionalities:  \n\uf0b7 \nRTGS STP Utility (Complete end to end- Incoming & Outgoing funds) \n\uf0b7 \nRTGS Interface for Supported MT Messages (MT-102, MT-103 & MT 202) \n\uf0b7 \nRTGS Message Verification \n\uf0b7 \nRTGS Message Validation \n\uf0b7 \nRTGS Message Processing & Generation  \n\uf0b7 \nRTGS Message Response \n\uf0b7 \nMessage Cancellation \n\uf0b7 \nMessage Inquiry (MT-199) \n\uf0b7 \nMessage Queues Dashboard (STP / Non- STP) \n\uf0b7 \nSupported MT Messages (Financial, Non-Financial, Responsive)  \n\uf0b7 \nUser Management Module \n\uf0b7 \nComplete Audit Trail \n\uf0b7 \nOut of the Box Reports (RTGS charges, FED, Depox Balances Reconciliation) \n\uf0b7 \nIntegration with Core Banking System \nIn addition, following requirements should be in the RTGS solution:  \n\uf0b7 \nMT Generation: RTGS option would be available in CBS/ Auto Banker (ABIII) after integration with \nABIII. From there branch can be selected and message type can be selected. Once selected all \nrelevant fields would be available and mandatory fields are required to continue. From 58A \nbeneficiary name/ bank shall be selected. It is the same BIC directory as shared by SBP. Branch \ncreating MT should only see message type 102 and 103 and should only see their selected branch \n(from the branch user has login only that branch should be visible). If user goes to other branch \nand generated from there it would not be allowed. Only HO users shall be allowed to create RTGS \nentries from any branch. This is a pre-deployment requirement. This is major FINCA requirement. \nUser shall be granted rights and if user generates message within time limit it shall be generated. \nIn case of exceeding limit, authorization shall be required. There shall be double authorization; \nthis is FINCA requirement. For branches MT 102 and 103 will be completed by following 3 steps \nsuch as (1) Preparation (2) Verification both at Branch level and (3) Authorization will be done at \nHO level.  \nBusiness Requirement Document: RTGS \n2 \n \n \n \n\uf0b7",
+    "type": "validation",
+    "testability_score": 6,
+    "validation_rules": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "keywords": [
+      "rtgs",
+      "message",
+      "branch",
+      "shall",
+      "should",
+      "user",
+      "from",
+      "selected",
+      "only",
+      "requirement"
+    ],
+    "source": "PDF_Section_2"
+  },
+  {
+    "id": "REQ_003",
+    "content": "In pre-authorization phase, application can be created, edited or cancelled. Four-\neye authorization principle is already implemented in Auto RTGS in which one user inputs and the \nother approves. The bank required six-eye authorization in which one user shall input and two \nusers shall be required for verification and authorization. At the time of application all details \nshall be available for review once transaction is reviewed. If authorization is granted, and \ntransaction is approved text file shall be generated in OUT folder and PRISM shall automatically \ncollect this transaction. This can also be reverted by 'send to operator' by treasury.  \n \n\uf0b7",
+    "type": "user_interface",
+    "testability_score": 4,
+    "validation_rules": [
+      "",
+      "",
+      ""
+    ],
+    "keywords": [
+      "authorization",
+      "shall",
+      "transaction",
+      "application",
+      "can",
+      "eye",
+      "which",
+      "one",
+      "user",
+      "required"
+    ],
+    "source": "PDF_Section_3"
+  },
+  {
+    "id": "REQ_004",
+    "content": "Controllers in STP and non-STPs are same.  \n \n\uf0b7 \nMT Review: There shall be an option for Treasury in HO to review MT created by branches; after \nreview it will be treasury's decision to authorize MT or revert back. If an MT is reverted then it \nwould be cancelled from cancellation interface. Message would be written however after \ncancellation financials would be automatically reverted in core banking solution. Batch would be \nselected and 99 shall be marked. Entry that is being cancelled is generated at branch level.  \n \n\uf0b7",
+    "type": "business_rule",
+    "testability_score": 4,
+    "validation_rules": [
+      "",
+      "",
+      [
+        "an MT is reverted",
+        ""
+      ]
+    ],
+    "keywords": [
+      "would",
+      "review",
+      "shall",
+      "treasury",
+      "after",
+      "reverted",
+      "cancelled",
+      "cancellation",
+      "controllers",
+      "stp"
+    ],
+    "source": "PDF_Section_4"
+  },
+  {
+    "id": "REQ_005",
+    "content": "Charges can be defined branch wise. RTGS charges will be defined branch wise due to \nFED difference in provinces.  \n \n\uf0b7 \nMT Generation Cut-off time: There is also an option to disable this window for MT generation for \nbranches after cut-off time. After cut-off time, branches won't be able to generate/ save MTs. \nLimit for branches can also be established from SWIFT parameters.  \n \n\uf0b7",
+    "type": "business_rule",
+    "testability_score": 6,
+    "validation_rules": [],
+    "keywords": [
+      "cut",
+      "off",
+      "time",
+      "branches",
+      "charges",
+      "can",
+      "defined",
+      "branch",
+      "wise",
+      "generation"
+    ],
+    "source": "PDF_Section_5"
+  },
+  {
+    "id": "REQ_006",
+    "content": "There shall be customizable reports as per Treasury's requirements such as Charges, \nPayables, Income, 102, 103 and cancelled reports. Format of these required reports are shared in \nannexure. We also need a universal query whereby we can extract reports as per our need. \n \n\uf0b7",
+    "type": "functional",
+    "testability_score": 2,
+    "validation_rules": [
+      ""
+    ],
+    "keywords": [
+      "reports",
+      "per",
+      "need",
+      "there",
+      "shall",
+      "customizable",
+      "treasury",
+      "requirements",
+      "such",
+      "charges"
+    ],
+    "source": "PDF_Section_6"
+  },
+  {
+    "id": "REQ_007",
+    "content": "As soon as transaction is processed then charges with timestamp should be \nimmediately available.  \n \n\uf0b7 \nCase in which A/C No. or Title is wrong: If account number or title of account is wrong, 199 shall \nbe generated by receiving bank. Through controller this MT should land to the same branch \nwhich generated the MT; branches would be able to read and rectify. \n\uf0b7 \n \n\uf0b7",
+    "type": "validation",
+    "testability_score": 5,
+    "validation_rules": [
+      ""
+    ],
+    "keywords": [
+      "should",
+      "which",
+      "title",
+      "wrong",
+      "account",
+      "generated",
+      "soon",
+      "transaction",
+      "processed",
+      "then"
+    ],
+    "source": "PDF_Section_7"
+  },
+  {
+    "id": "REQ_008",
+    "content": "In Dashboard information of incoming & pending outgoing, waiting, not \nacknowledged MTs shall be viewable. These can be viewed date wise. \n \n\uf0b7 \nIN/ OUT Folder: Similarly, as there is OUT folder there shall also be an IN folder. Auto Upload \napplication shall go through IN folder and fetch them to AutoRTGS. Once fetched into AutoRTGS, \nTreasury user can review and decide action about incoming MTs. All details of incoming MT shall \nbe viewable.  \n \n\uf0b7 \nMT Editing: Option to change account number of incoming should be unchecked/ disabled as per \nHead RTGS' input. If an incoming MT is wrong, then 199 shall be generated. If amendment \nBusiness Requirement Document: RTGS \n3 \n \nrequest is received then account number can be amended and this option shall be allowed with \nproper authorization. \n \n\uf0b7 \nIncoming MT: Incoming MT 102 and 103 will land at Controller workstation, it will hit the treasury \nblotter (SBP account) in the system and ultimately it needs to be routed to the concerned branch \nthrough auto sweep adaptor for processing and crediting concerned customer accounts in \nbranch. \n\uf0b7 \nTreasury Own Trades:  Treasury own trades i.e. Call Lending, Call Borrowing \u2013 Generation of auto \nMT 202 along should be prepared by system based on MM deal input i.e. Call Lending and Call \nBorrowing maturity and their reports should be provided. Call Lending at the time of start of deal \nand for Call Borrowing at the time of maturity MT 202 should be auto prepared by system.  \n \n\uf0b7 \nDuplication provision: Duplications Provision for generation of Duplication message (in case of \nNetwork or connectivity failure) is required. It should be allowed through proper authorization.  \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nBusiness Requirement Document: RTGS \n4 \n \nAnnexure 1 \u2013 Report Formats \nA. STP Customer Report:  \nXYZ Bank  \nFile \nName \nReference \nDate \nCurr \nAmount \nCustomer \nAccount# \nCustomer \nTitle \nBeneficiary  \nBeneficiary \nAccount  \nBeneficiary  \nTitle  \nStatus \nRemarks \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nB. Customer Charges Report \n \n \n \n  \n \nRTGS Transaction\n [Entry Date From 27/01/2020] [Entry Date To 27/01/2020]\nS #\nUp lo ad #\nS B L \nTrans ac t io n \nM e s s ag e  \n58 A\n3 2 A\nS B P Charg e s\nS B L Charg e s\nFED\nTrans ac t io n #  \nTyp e   \nTyp e   \n16  Charac c t e r\nCo d e\nA/ c  \nDat e\nAmo unt\nTyp e\nOrd e ring  Cus t o me r ( 50 K)\nA/ C Num \nCus t o me r \nB ank \nB ranc h \nCit y\n3 4  \nName  \nName  \nName  \nCharac t e rs\n3 5 \n3 5 \n3 5 \nCharac t e rs  \nCharac t e rs  \nCharac t e rs  \nB e ne f ic iary Cus t o me r ( 59 )\nA/ C Num \nCus t o me r \nB ank \nB ranc h \nCit y\n3 4  \nName  \nName  \nName  \nCharac t e rs\n3 5 \n3 5 \n3 5 \nCharac t e rs  \nCharac t e rs  \nCharac t e rs  \nS e nd e r t o  Re c e ive r inf o rmat io n( 72 )\nRe g ulat o ry \nUs e r\nAut h\nRe p o rt ing  \nRe marks ( 1)  \nRe marks ( 2 )  \nRe marks ( 3 )  \nRe marks ( 4 )  \n( 77B )\n3 3  \n3 3  \n3 3  \n3 3  \nCharac t e rs\nCharac t e rs  \nCharac t e rs  \nCharac t e rs  \nBusiness Requirement Document: RTGS \n5 \n \n \nC. Customer RTGS Inward \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nPrinting Time  \n18:48:19\nInter Branch Transfer [ Authorized ] -  [ INWARD TT  INTERBRANCH ]\nPa ge  #\n1/1\nRe port ID \nSAJJAD\nUse r ID\n S#\nTra ns. #\nBra nc h\nCP Code  \nR. Code\nEntry Da te\nNa me  of Custome r\nAmount\nUse r\nAuth\n1\n17798120 0111 - BAHRIA NBP\nINWTT\n28-Jan-20\n46,340.00\nSysadmin1\nVERSHA\n2\n17797520 0111 - BAHRIA BAH\nINWTT\n28-Jan-20\n600,000.00\nSysadmin1\nSysadmin1\n3\n17797620 0111 - BAHRIA HBL\nINWTT\n28-Jan-20\n1,000,000.00\nSysadmin1\nSysadmin1\n4\n17797820 0111 - BAHRIA HABIBMET\nINWTT\n28-Jan-20\n1,100,000.00\nSysadmin1\nSysadmin1\n5\n17798420 0111 - BAHRIA NBP\nINWTT\n28-Jan-20\n100,000.00\nSysadmin1\nVERSHA\nTotal :\n2,846,340.00\n** End of Report **\nBusiness Requirement Document: RTGS \n6 \n \n \nD. Customer RTGS Outward \n \n \n \n \n \n \n \n \n \n \nSamba Bank Limited\nPrinting Da te  \n27-Jan-20\nPrinting Time  \n15:11:47\nInter Branch Transfer [ Authorized ] -  [ BRANCH CUSTOMER OUTWARD ]\nPa ge  #\n1/1\nRe port ID \nSAJJAD\nUse r ID\n S#\nTra ns. #\nBra nc h\nCP Code  \nR. Code\nEntry Da te\nRe fe re nc e\nNa me  of Custome r\nCha rge s\nAmount\nUse r\nAuth\n1\n17768520 0111 - BAHRIA COMBOP\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(50,000,000.00) Sysadmin1\nSysadmin2\n2\n17768720 0111 - BAHRIA COMMCB\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(50,000,000.00) Sysadmin1\nSysadmin2\n3\n17769020 0111 - BAHRIA COMNBP\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(40,000,000.00) Sysadmin1\nSysadmin2\n4\n17769120 0111 - BAHRIA COMMEEZAN\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(150,000.00) Sysadmin1\nSysadmin2\n5\n17776620 0111 - BAHRIA COMUBL\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(170,000.00) Sysadmin1\nSysadmin2\n6\n17777520 0111 - BAHRIA COMSCB\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(200,000.00) Sysadmin1\nSysadmin2\n7\n17777620 0111 - BAHRIA COMBAFL\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(1,139,101.39) Sysadmin1\nSysadmin2\n8\n17777720 0111 - BAHRIA COMHBL\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(950,000.00) Sysadmin1\nSysadmin2\n9\n17777820 0111 - BAHRIA COMMEEZAN\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(100,000.00) Sysadmin1\nSysadmin2\n10\n17777920 0111 - BAHRIA COMMEEZAN\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(100,000.00) Sysadmin1\nSysadmin2\n11\n17778020 0111 - BAHRIA COMMEEZAN\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(1,500,000.00) Sysadmin1\nSysadmin2\n12\n17778120 0111 - BAHRIA COMBAH\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(2,800,000.00) Sysadmin1\nSysadmin2\n13\n17778220 0111 - BAHRIA COMUBL\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(400,000.00) Sysadmin1\nSysadmin2\n14\n17778320 0111 - BAHRIA COMBAH\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(100,000.00) Sysadmin1\nSysadmin2\n15\n17778520 0111 - BAHRIA COMSCB\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(88,000,000.00) Sysadmin1\nSysadmin2\n16\n17778620 0111 - BAHRIA COMHBL\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(50,000,000.00) Sysadmin1\nSysadmin2\n17\n17783120 0111 - BAHRIA COMBAFL\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(30,000,000.00) Sysadmin1\nSysadmin2\n18\n17783320 0111 - BAHRIA COMBAFL\nBRCUSTOT\n27-Jan-20 AUTO OUTWARD\n0.00\n(20,000,000.00) Sysadmin1\nSysadmin2\nTotal :\n(335,609,101.39)\n** End of Report **\nBusiness Requirement Document: RTGS \n7 \n \nE. Message Detail \n \nBank Name: \nReport ID: \nPeriod From: \nASD Bank \nrpt_message_queue_detail \n01/01/2019 To : 01/01/2019 \nMessages Detail \nBank Date: \nPrint Date: \n23/01/2020 \n01/2020 15:44:42 \nSr. # \nReference  \nMT Type \nValue Date \nAmount \nSender BIC \nReceiver BIC \nCreation Date \n OUTGOING MESSAGES \n Category: AWAITING MESSAGES  \n  1 \nAIB20201147449 \n202 \n01/01/2019  \n2,500,000.00                 EGIBPKKA \nUNILPKKA \n01/01/2019 \n10:54:21 \n \n \n \n \n \n \n \n \n2,500,000.00  INCOMING MESSAGES \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nBusiness Requirement Document: RTGS \n8 \n \nPage 1 of 1 \nF. Outgoing MT \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nFINCA MICRO FINANCE BANK\nMT-202     \nOutgoing\nS.No\nReference No\nName of Bank to Funds Transfer\nAmount\nValue Date\nCharges\n1\nFINCA/002/2019\nZarai Taraqiati Bank\n207,057,534\n        \n24-Jan-20\n200.00\n                            \nMT-103\nOutgoing\nS.No\nReference No\nName of Branch\nName of Ord. Customer\nAmount\nName of Bank to Funds transfer\nCharges\nValue Date\n1\nFINCA/001/2020\nSettelite Town Rawalpindi\nMurtaza Sarwar\n15,000,000\n        \nNRSP Microfinance Bank\n300.00\n                          \n16-Jan-20\n2\n3\n9.00 a.m. 2.00 p.m.\n200 Plus FED\n4\n2.00 p.m. 3.30 p.m.\n300 Plus FED\n5\n3.30 p.m. 4.30 p.m.\n500 Plus FED\nFINCA MICRO FINANCE BANK\nMT-102 \nOutgoing\nS.No.\nReference No.\nName of Branch\nName of Ord. Customer\nAmount\nName of Bank to Funds transfer\nCharges\nValue Date\n1\nFINCA/001/2020\n9.00 a.m - 4.30 p.m.\n25.00\n      \nPlus FED\nFINCA MICRO FINANCE BANK \nBusiness Requirement Document: RTGS \n9 \n \n \nG. Incoming MT \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nINCOMING 202-MTs\nS.No\nReference No\nName of Bank from Funds Transfer\nAmount\nValue Date\n1\n0214-S2-191227\nSoneri Bank Ltd\n1,000,000\n27-Dec-19\n2\nZTBLTDRFINCA\nZarai Taraqiati Bank\n200,000,000\n27-Dec-19\nS.No\nReference No\nName of Customer\nName of FINCA Branch\nName of Bank from Funds Transfer\nAmount\nValue Date\n1\n10012832108T1\nArtistic Milliners Pvt. Ltd\nRawalpindi Settelite Town\nBank Al Habib Ltd.\n1,000,000\n      \n2-Jan-20\nINCOMING 103-MTs\nS.No\nReference No\nName of Customer\nName of FINCA Branch\nName of Bank from Funds Transfer\nAmount\nValue Date\n1\n0477/200107/001\nFINJA Pvt. Limited\nClifton Branch Karachi\nBank Al Falah \n100,000\n                          \n7-Jan-20\n2\nHMB7330681\nTaiga Apparel Pvt. Ltd\nMall Road, Lahore\nHabib Metropolitan Bank Ltd\n367,000\n                          \n17-Jan-20\nINCOMING 102-MTs\nBusiness Requirement Document: RTGS \n10 \n \nH. RTGS Transactional Report \n \n \nI. STP Customer RTGS Report \n \n \nBank Name: ASD Bank\nReport ID:\nrpt_ack_nak_pending_trans\n S.No\nTransaction \nCode\nTransaction \nDate\nSenders \nReference\nAmount\nParty Identifier\nOrdering \nCustomer Name\nFunds \nTransferred \nTo Bank\nFunds Credited -\nCustomer Name\n MT-102\n1                     00        02/01/20AIB10204567510\n750,000.00\n/0102428018019\nMUZAMMAL HU UBL PAKISTAN\nZAHEER ALI\n============================================================================================================================================================\nBank Name: ASD Bank\nReport ID:\nrpt_ack_nak_pending_trans\n S.No\nTransaction \nCode\nTransaction \nDate\nReceivers \nReference\nAmount\nParty Identifier\nOrdering \nCustomer Name\nFunds \nTransferred \nFrom Bank\nFunds Credited to\nCustomer Name\n MT-102\n#########\n   \nAIB10204567510\n550,000.00\n/0102428018019\n         HUSSAIN ALI \nSONERI BANK LTD\nAKBAR ALI\nPeriod From: 01/01/2019 To : 01/05/2019\nRTGS OUTGOING TRANSACTIONS REPORT \n(SUMMARY) \nPrint Date: 23/01/2020 \n15:46:19\nPeriod From: 01/01/2019 To : 01/05/2019\nRTGS INCOMING TRANSACTIONS REPORT \n(SUMMARY) \nPrint Date: 23/01/2020 \n15:46:19\nSamba Bank Limited\nSTP RTGS Outward\nFile Name\nReference\nDate\nCurr\nAmount\nCustomer Account#\nCustomer Title\nBeneficiary neficiary Accou eneficiary  Title\nStatus\nRemarks\n BIC\nMSG.20025BKB TF19357188130\n27-Jan-2020 PKR\n1,921,001.94\nBANK AL HABIB LTD\nUnsuccessfull\nCounter Party Not Found! Field 50K is Missing! Fie\nMSG.20025N12QTF19329640800\n27-Jan-2020 PKR\n2,603,812.00\nBANK ALFALAH\nUnsuccessfull\nCounter Party Not Found! Field 50K is Missing! Fie\nMSG.20025S8JV TF19296537460\n27-Jan-2020 PKR\n2,097,576.00\nBANK AL HABIB LIMITED\nUnsuccessfull\nCounter Party Not Found! Field 50K is Missing! Fie\nMSG.200273Z9FTF19296857500\n28-Jan-2020 PKR\n1,777,513.00\nBANK AL HABIB\nUnsuccessfull\nCounter Party Not Found! Transaction Date Not Eq\nMSG.200275V1KTF19288822290\n28-Jan-2020 PKR\n1,265,442.00\nBANK AL HABIB\nUnsuccessfull\nCounter Party Not Found! Transaction Date Not Eq\nMSG.2002759LMFT200270YX6N\n27-Jan-2020 PKR\n50,000,000.00\nBPUNPKKA\nPK63BPUN5710SACHAL ENGINSuccessfull\nAuto Upload File\nMSG.20027S5LNFT20027YNM5H\n27-Jan-2020 PKR\n50,000,000.00\nMUCBPKKA\nPK47MUCB012 PK LIVE STOCKSuccessfull\nAuto Upload File\nMSG.20027RYH FT200276K9G2\n27-Jan-2020 PKR\n40,000,000.00\nNBPAPKKA\nPK73NBPA0365KHYBER TOBASuccessfull\nAuto Upload File\nMSG.20027JDK6FT20027R84X5\n27-Jan-2020 PKR\n150,000.00\nMEZNPKKA\nPK15MEZN004 NAEEM TARIQ Successfull\nAuto Upload File\nMSG.20027XZR FT20027R6CNB\n27-Jan-2020 PKR\n170,000.00\nUNILPKKA\nPK58UNIL0109 RASHID AKBARSuccessfull\nAuto Upload File\nMSG.20027W6BFT20027Y1ZL8\n27-Jan-2020 PKR\n200,000.00\nSCBLPKKX\nPK26SCBL0000 SYED AMEEN USuccessfull\nAuto Upload File\nMSG.200277RFXFT20027FZHN9\n27-Jan-2020 PKR\n1,139,101.39\nALFHPKKA\nPK77ALFH0032WAJAHAT ALASuccessfull\nAuto Upload File",
+    "type": "validation",
+    "testability_score": 10,
+    "validation_rules": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      [
+        "an incoming MT is wrong,",
+        ""
+      ]
+    ],
+    "keywords": [
+      "jan",
+      "bank",
+      "auto",
+      "name",
+      "bahria",
+      "date",
+      "outward",
+      "customer",
+      "brcustot",
+      "rtgs"
+    ],
+    "source": "PDF_Section_8"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "REQ_001",
+    "content": "BRS Electronic Data Exchange Proxy \n1 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nBUSINESS REQUIREMENTS SPECIFICATION \n(BRS) \n \n \nBusiness domain: Agriculture \n \nBusiness process: Electronic Data Exchange Proxy \n \nDocument identification: CEFACT/Forum/2006",
+    "type": "business_rule",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "business",
+      "brs",
+      "electronic",
+      "data",
+      "exchange",
+      "proxy",
+      "requirements",
+      "specification",
+      "domain",
+      "agriculture"
+    ],
+    "source": "PDF_Section_1"
+  },
+  {
+    "id": "REQ_002",
+    "content": "Electronic Data Exchange Proxy \n \nUN/CEFACT International Trade and Business Processes Group: TBG18 \n \n \n \n \nDate of TBG Approval: January 16th, 2009 \nDate of FMG Approval: October 18th, 2009 \n \nUN/CEFACT \nSIMPLE, TRANSPARENT AND EFFECTIVE PROCESSES \nFOR GLOBAL BUSINESS  \nBRS Electronic Data Exchange Proxy \n2 \nDocument Change history log \nDate of \nchange \nVersion \nSummary of changes \nAuthor \n25/03/2008 \n0.1 \n \nG. CHERUY-POTTIAU \n30/04/2008 \n0.3 \n \nG. CHERUY-POTTIAU \n22/09/2008 \n0.4 \nReview by TBG18/EEG14 \u2013 F2F meeting LYON  G. CHERUY-POTTIAU \n \n \n \n \n \n \n \n \n \n \n \n \n \nBRS Electronic Data Exchange Proxy \n3 \nBusiness Requirements Specification \n \nTable of contents \n \n1 \nPREAMBLE ........................................................................................................................................... 4 \n2 \nREFERENCES ...................................................................................................................................... 4 \n3 \nOBJECTIVE ........................................................................................................................................... 4 \n4 \nSCOPE .................................................................................................................................................. 5 \n5 \nBUSINESS REQUIREMENTS .............................................................................................................. 6 \n5.1 \nBusiness requirements view ............................................................................................................ 6 \n5.2 \nBusiness process elaboration .......................................................................................................... 7 \n5.3 \nInformation flow definition (activity diagram, description) ...................................................... 10 \n5.4 \nInformation model definition (class diagram) ............................................................................ 14 \n5.5 \nBusiness Information Entities ....................................................................................................... 16 \n \nBRS Electronic Data Exchange Proxy \n4 \n1 Preamble \n \nThe purpose of the project is to create Business Process Models and Business Class Diagrams for \ndocumenting the business scenarios and business transactions involved in the authorization given by an \nagricultural party to one or more parties to allow for the exchange of data on their behalf.  \n \nThe process is described by two uses cases : \n \nTo send the proxy message to one or more parties \n \nAcknowledge receipt message \nThe output will be used to obtain and validate the XML messages to support the business process.  \n \nNote : Proxy in this document gives only permission for data exchange and not for decision making  \nThe structure of this document is based on the structure of the UN/CEFACT Business Requirements \nSpecification (BRS) document reference CEFACT/ICG/005. \n \n2 References \n \nUN/CEFACT Modeling Methodology User Guide (CEFACT/TMG/N093) \nUN/CEFACT Business Requirement Specification Document Template (CEFACT/ICG/005) \nICG business requirements specification V1R5 20040309 approved.doc \n \n \n3 Objective \n \nThe objective of this project is to standardize the Business Processes, the Business Transactions and the \nInformation Entities involved in the authorization given by an agricultural party to one or more parties to \nallow for the exchange of data on their behalf. \nA data exchange proxy describes the commitment (agreement) between an agricultural party and two or \nmore of his partners who manage on his behalf its own informations. \nData exchange proxy aims to:",
+    "type": "validation",
+    "testability_score": 10,
+    "validation_rules": [],
+    "keywords": [
+      "business",
+      "data",
+      "exchange",
+      "proxy",
+      "cefact",
+      "document",
+      "requirements",
+      "electronic",
+      "brs",
+      "specification"
+    ],
+    "source": "PDF_Section_2"
+  },
+  {
+    "id": "REQ_003",
+    "content": "Specify the terms of the proxy (data, partners, implementation period, etc.)",
+    "type": "business_rule",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "specify",
+      "terms",
+      "proxy",
+      "data",
+      "partners",
+      "implementation",
+      "period",
+      "etc"
+    ],
+    "source": "PDF_Section_3"
+  },
+  {
+    "id": "REQ_004",
+    "content": "Register the agricultural party\u2019s agreement for the specified exchange of information",
+    "type": "business_rule",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "register",
+      "agricultural",
+      "party",
+      "agreement",
+      "specified",
+      "exchange",
+      "information"
+    ],
+    "source": "PDF_Section_4"
+  },
+  {
+    "id": "REQ_005",
+    "content": "Notify of this agreement to the partners involved in the exchange",
+    "type": "business_rule",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "notify",
+      "this",
+      "agreement",
+      "partners",
+      "involved",
+      "exchange"
+    ],
+    "source": "PDF_Section_5"
+  },
+  {
+    "id": "REQ_006",
+    "content": "Electronic receipt of notification",
+    "type": "business_rule",
+    "testability_score": 2,
+    "validation_rules": [],
+    "keywords": [
+      "electronic",
+      "receipt",
+      "notification"
+    ],
+    "source": "PDF_Section_6"
+  },
+  {
+    "id": "REQ_007",
+    "content": "Updating or cancelling the proxy message  \nThe information exchanged between the two partners are of all kinds: accounting, financial, banking, \nproduct traceability \nBRS Electronic Data Exchange Proxy \n5 \n \n4 Scope \n \nThis section describes the extent and limits of the business process within the information chain being \ndescribed in this document. \nThe class diagram of the data exchange proxy is developed such as way that it specifies all information \nof data exchange proxy given by the agricultural party, reusable business information entities. \nThis process describes an French use case but it could be extent to others needs \n \nCategories \nDescription and Values \nBusiness Process \nElectronic data exchange proxy \nProduct Classification \nAll types of data exchange authorization. \nIndustry Classification \nAgricultural sector \nGeopolitical \nGlobal \nOfficial Constraint \nEuropean Regulations \nNational regulation \nLocal applicable regulation \nBusiness Process Role \n \nSupporting Role \nNone \nSystem Capabilities \nNo limitations \n \nBRS Electronic Data Exchange Proxy \n6 \n \n \n5 Business requirements \n5.1 Business requirements view \nThe Business Process is the detailed description of the way trading partners intend to play their \nrespective role, establish business relationship and share responsibilities to interact efficiently with the \nsupport of their respective information system. \nThe business documents are composed of Business Information Entities (BIE), which when available, are \ntaken from the library of reusable business information entities and when not found, are proposed as new \nBusiness Information Entities. The contents of the business documents and the Business Information \nEntities are presented using class diagrams. \n \nThis paper aims to describe the business processes for the data exchange proxy management between \nan agricultural party and its economic/administrative partners.  \nA data exchange PROXY describes the tripartite commitment between an agricultural party and two or \nmore of his partners who manage on his behalf its own informations. \n \n \n \nBRS Electronic Data Exchange Proxy \n7 \n5.2 Business process elaboration \n \n1.1.1 Use case: Electronic Data exchange proxy transmission \nuc Cas d'utilisation m\u00e9tier\nPartner 1\nPartner 2\nSending an  \nelectronic data \nexchange proxy\nReceipt of an \nelectronic data \nexchange proxy\nFirst exchange\nUpdated\nCancellation\nApproved\nRejected\nApproved with changes\nSend\nReceived\nReceived\nSend\n \nFigure 1: Use case diagram \u2013 \nBRS Electronic Data Exchange Proxy \n8 \n \n1.1.1 Use case description \n \nBusiness process : Sending an electronic data exchange proxy \nBusiness process name Sending an electronic data exchange proxy \nIdentifier \nSend Exchange proxy message \nDescription \nThe agricultural party authorized its partner to exchange its own \ndata \u2013() \nThis first partner send this data exchange proxy message in \nelectronic form to a second partner in order to confirm the \nagricultural party \u2019s authorization.. \nActors \nIssuer : partner 1 (accounting center, cooperatives etc) \nReceiver : partner 2 (bank, insurance\u2026) \nPre-condition \nInterchange agreement between the 2 partners \nIn some case, Agreement and signature of the agricultural party \nconcerning its electronic data exchange \nPost-conditions \nnone \nScenarios \nBoth of partners set up an electronic data exchange concerning \nagricultural party\u2019s informations (accounting data, bank etc.). \nThere is an interchange agreement between the 2 partners. \nThe agricultural party signed an electronic data interchange \nproxy  with one of these partners. \nThis partner (partner 1) sent this proxy in electronic form to \npartner 2.  \n \nRemarks \nNone \n \nBRS Electronic Data Exchange Proxy \n9 \n \nBusiness Process : Electronic data exchange proxy Receipt \nBusiness process name Electronic data exchange proxy Receipt \nIdentifier \nExchange authorization receipt \nDescription \nThis process concerns the receipt message of the electronic \ndata exchange proxy on behalf of an agricultural party. \nActors \nBoth of agricultural party\u2019s partners \nPre-condition \nReception of an electronic data exchange proxy message \nPost-conditions \nPartner 2 received  an electronic data exchange proxy message \nfrom partner 1. \nThis message is checked by the receiver and if it\u2019s accepted, the \nanswer is resent to the issuer (partner 1) \n \nScenarios \n \nRemarks \nMessage status : \n \nAccepted : Partner 2 knows the agricultural party and the \ndata are correct \n \nRejected : Agricultural party is unknown by partner 2 \n \nAccepted with changes : agricultural party is known by \npartner 2 but data should be corrected \u2013\nrejected but the agricultural party is known - \nacceptable with modification \n \nBRS Electronic Data Exchange Proxy \n10 \n \n5.3 Information flow definition (activity diagram, description) \n \nThe activity diagram allows identifying all the significant information flows between the farm and its \npartner. \n \n5.3.1. Sequence diagram \nsd Sequence des messages\nPartner 1\n(from Sp\u00e9cification des processus)\nPartner 2\n(from Sp\u00e9cification des processus)\nElectronic\nData\nExchange\nproxy\nReceipt of an electronic\ndata exchange proxy\n \nBRS Electronic Data Exchange Proxy \n11 \n \n5.3.2. Activity diagrams   \n5.3.1.1 Activity Diagram : Sending an electronic data exchange authorization \nact Collaboration m\u00e9tier - Envoi d'une autorisati...\nReceiver\nIssuer (on behalf of agricultural party)\nStart\npe 1 : Processus m\u00e9tier)\nPreparation and\nemission of the\nmessage \n(from Etape 1 : Processus m\u00e9tier)\nReception of the\nmessage\n(from Etape 1 : Processus m\u00e9tier)\nElectronic Data \nExchange proxy\nCheck in\n(from Etape 1 : Processus m\u00e9tier)\nInformations\nUpdate and start \nof the exchange\n(from Etape 1 : Processus m\u00e9tier)\nEnd\n(from Etape 1 : Processus m\u00e9tier)\nrejected but acceptable\nwith modifications\nApprovement\napproved with changes\n \nNote : The modifications or changes process is not included in this BRS. \nBRS Electronic Data Exchange Proxy \n12 \n \n5.3.1.2 Activity diagram description:  \n \nBusiness Collaboration: Sending an electronic data exchange authorization \nIdentifier \nSending an electronic data exchange proxy \nDescription \nPartner 1 send to partner 2 the farmer\u2019s data exchange proxy \nmessage with as objective to set up an electronic data \ninterchange  \nPartners types \nPartner 1 : Issuer \nPartner 2 : Receiver \nBoth are farm\u2019s partner and are working together on behalf of the \nfarmer (accounting center, bank, insurance, authorities etc.) \nAuthorized Roles \nIssuer \nReceiver \nLegal \nSteps/Requirement \nnone \nEconomic \nconsequences \nNone \nInitial/Terminal Event \nInitial : Farmer signed the exchange authorization form (paperor \nelectronic) \nScope \nInitial : Partner 1 sends the document \nTerminal : Partner 2 accepts the document \nBoundary \nNone \nConstraints \nNone \n \nBRS Electronic Data Exchange Proxy \n13 \n \n5.3.1.3 Activity diagram : Reception of an electronic data exchange proxy \nact Collaboration m\u00e9tier - Accus\u00e9 de reception\nReceiver\nIssuer (on behalf of farmer)\nStart\n(from Etape 1 : Processus m\u00e9tier)\nEnd\n(from Etape 1 : Processus m\u00e9tier)\nExchange authorization \nacknowledgement\n \n \n5.3.1.4 Description \n \nBusiness Collaboration: Electronic data exchange proxy Receipt \nIdentifier \nElectronic data exchange proxy Receipt \nDescription \nElectronic receipt of notification \nPartners types \nPartner 2 : Issuer \nPartner 1 : Receiver \nBoth are agricultural party\u2019s partners and are working together on \nbehalf of the agricultural party (accounting center, bank, \ninsurance, authorities etc.) \nAuthorized Roles \nIssuer \nReceiver \nLegal \nSteps/Requirement \nnone \nEconomic \nconsequences \nNone \nInitial/Terminal Events \n \nScope \n \nBoundary \nNone \nConstraints \nNone \nBRS Electronic Data Exchange Proxy \n14 \n \n \n5.4 Information model definition (class diagram) \n \nClass diagram describes all the necessary classes of information for a flow \nBRS Electronic Data Exchange Proxy \n15 \nclass Mod\u00e8le d'informati...\nProxy_ Party\n+ Identification:  Identifier\n+ \nAdditional Identification:  Code\n+ Name:  Text\n+ Type:  Code\n+ Description:  Text\n+ \nActivity Identification:  Code\nStructured_ Address\n+ Postcode:  Code\n+ Building Name:  Text\n+ StreetName:  Text\n+ City Name:  Text\n+ CountryName:  Text\n+ CountryId:  Identifier\n+ PostOfficeBox:  Text\nUnstructured_ Telecommunication_ \nCommunication\n+ Complete number:  Text\nParty_ Contact\n+ Identification:  Identifier\n+ \nAdditionnal Identification:  Code\n+ PersonName:  Text\n+ DepartmentName:  Text\nProxy_ Document\n+ Document identification Number:  Identifier\n+ Type of Echange:  Code\n+ Message Idenfication :  Text\n+ Signature Date:  DateTime\n+ Start Date:  DateTime\n+ Signature Location:  Text\n+ End Date:  DateTime\n+ Cancellation Date:  DateTime\nClient_ Financial Account\n+ Identification:  Identifier\n+ Type:  Code\n+ \nAccount_Name:  Text\n+ Currency:  Code\nClient_ Description\n+ \nAdditional Identification:  Code\n+ \nAccount_number:  Numeric\nEmail_ Communication\n+ URI:  Code\nFinancial Account_ Financial Institution\n+ Business Entity Identification (BIC):  Identifier\n+ Bank Identification Code (BIC):  Identifier\n+ Global Location Number (LN):  Identifier\n+ Identification:  Identifier\n+ Name:  Text\n+ Role:  Code\n0..*\nURI communication\n0..*\nParty contact\n0..1\nFax number\nTelephonenumber\n0..1\n0..1\n1\nParty\naddress\n0..1\nClient account description\n1..\nReceiver\n1\nIssuer\n0..1\nOwner\n0..*\nFarmer\n0..1\nServicing\n \n \n.  \n \nBRS Electronic Data Exchange Proxy \n16 \n \n \n5.5 Business Information Entities \nTo be completed",
+    "type": "validation",
+    "testability_score": 9,
+    "validation_rules": [
+      ""
+    ],
+    "keywords": [
+      "exchange",
+      "data",
+      "proxy",
+      "electronic",
+      "partner",
+      "business",
+      "party",
+      "agricultural",
+      "information",
+      "text"
+    ],
+    "source": "PDF_Section_7"
+  }
+]
