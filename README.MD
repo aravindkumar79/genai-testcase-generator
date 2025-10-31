@@ -35,27 +35,27 @@ Cucumber Feature Files (.feature)
 - Ollama (for local LLM support)
 - Tesseract OCR
 
-### 1. Clone Repository
+## Clone Repository
 ```bash
 git clone https://github.com/yourusername/ai-test-generation-poc.git
 cd ai-test-generation-poc
 
-### 2. Install Dependencies
+## Install Dependencies
 pip install -r requirements.txt
 
-### 3. Setup Ollama (Optional - for local LLM)
-# Install Ollama
-curl -fsSL https://ollama.ai/install.sh | sh
+## Setup Ollama (Optional - for local LLM)
+  # Install Ollama
+  curl -fsSL https://ollama.ai/install.sh | sh
+  
+  # Pull Mistral model
+  ollama pull mistral:7b
+  
+  # Install Tesseract OCR
+  Mac: brew install tesseract
+  Ubuntu: sudo apt-get install tesseract-ocr
+  Windows: Download from UB-Mannheim/tesseract
 
-# Pull Mistral model
-ollama pull mistral:7b
-
-# Install Tesseract OCR
-Mac: brew install tesseract
-Ubuntu: sudo apt-get install tesseract-ocr
-Windows: Download from UB-Mannheim/tesseract
-
-### Project Structure
+## Project Structure
 genai-testcase-generator/
 ├── pdf_processor.py          # PDF extraction & OCR
 ├── vector_store.py           # ChromaDB semantic search
