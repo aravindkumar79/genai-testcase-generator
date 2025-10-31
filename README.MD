@@ -43,16 +43,16 @@ cd genai-testcase-generator
 pip install -r requirements.txt
 
 ## Setup Ollama (Optional - for local LLM)
-  # Install Ollama
-  curl -fsSL https://ollama.ai/install.sh | sh
-  
-  # Pull Mistral model
-  ollama pull mistral:7b
-  
-  # Install Tesseract OCR
-  Mac: brew install tesseract
-  Ubuntu: sudo apt-get install tesseract-ocr
-  Windows: Download from UB-Mannheim/tesseract
+# Install Ollama
+curl -fsSL https://ollama.ai/install.sh | sh
+
+# Pull Mistral model
+ollama pull mistral:7b
+
+# Install Tesseract OCR
+Mac: brew install tesseract
+Ubuntu: sudo apt-get install tesseract-ocr
+Windows: Download from UB-Mannheim/tesseract
 
 ## Project Structure
 genai-testcase-generator/
